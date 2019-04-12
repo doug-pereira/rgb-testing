@@ -1,26 +1,7 @@
-<form name="redirect">
+<form>
 <center>
-	Redirecting to consumer/bundles in
-	<form><input type="text" size="3" name="redirect2"></form>
-	seconds
+	Redirecting to <b>https://www.rogers.com/consumer/bundles</b>...
 </center>
 <script>
-	var target="https://www.rogers.com/consumer/bundles"
-	var countdown=4
-
-	var time=document.redirect.redirect2.value=countdown+1
-
-	function doCountdown(){
-		if (time!=1){
-			time-=1
-			document.redirect.redirect2.value=time
-		}
-		else {
-			window.location=target
-			return
-		}
-		setTimeout("doCountdown()",1000)
-	}
-
-	doCountdown()
+	setTimeout("window.location = 'https://www.rogers.com/consumer/bundles';", 3000);
 </script>
